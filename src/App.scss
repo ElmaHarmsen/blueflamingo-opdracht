@@ -1,0 +1,40 @@
+.App {
+  .App__header {
+    background-color: peachpuff;
+    text-align: center;
+    height: 55px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    justify-content: center;
+
+    h1 {
+      margin: .8rem 0;
+    }
+
+    .Header__flamingo {
+      width: 30px;
+      margin: .4rem;
+    }
+    .Header__flamingo:first-of-type {
+      transform: scaleX(-1);
+    }
+  }
+  .App__products-container {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 60%;
+    margin: 2rem auto;
+
+    .Products__summary {
+      text-decoration: underline 2px solid black;
+      margin: .8rem 0;
+      line-height: 1.4;
+    }
+  }
+  .App__logo {
+    img {
+      width: 25%;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.singleProduct {
+  display: flex;
+  flex-flow: row nowrap;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1);
+  margin: .8rem 0;
+  padding: 1rem;
+
+  .singleProduct__img {
+    background-color: white;
+  }
+  div {
+    margin-left: 1.8rem;
+
+    .singleProduct__name {
+
+    }
+    .singleProduct__description-short {
+      padding: .8rem 0;
+    }
+  }
+}
