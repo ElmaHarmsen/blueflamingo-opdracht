@@ -8,14 +8,31 @@
   .singleProduct__img {
     background-color: white;
   }
-  div {
+  .singleProduct__text {
     margin-left: 1.8rem;
 
-    .singleProduct__name {
-
-    }
     .singleProduct__description-short {
       padding: .8rem 0;
+      line-height: 1.2;
+    }
+    .singleProduct__more-and-link {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: flex-start;
+      margin-top: .8rem;
+
+      .singleProduct__link {
+        background-color: #fff;
+        border: 2px solid #000;
+        color: #000;
+        text-decoration: underline 2px solid #000;
+        padding: .8rem 1rem;
+        margin: .8rem 0;
+      }
+      .singleProduct__link:hover {
+        background: rgb(254,141,148);
+        background: radial-gradient(circle, rgba(254,141,148,1) 15%, rgba(135,206,250,1) 100%); 
+      }      
     }
   }
 }

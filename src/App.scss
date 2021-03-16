@@ -1,6 +1,7 @@
 .App {
   .App__header {
-    background-color: peachpuff;
+    background-color: lightskyblue;
+    box-shadow: 0 4px 1px -1px rgba(0,0,0,0.1);
     text-align: center;
     height: 55px;
     display: flex;
@@ -13,7 +14,7 @@
     }
 
     .Header__flamingo {
-      width: 30px;
+      width: 40px;
       margin: .4rem;
     }
     .Header__flamingo:first-of-type {
@@ -30,6 +31,32 @@
       text-decoration: underline 2px solid black;
       margin: .8rem 0;
       line-height: 1.4;
+    }
+
+    .Products__pagination {
+      display: flex;
+      flex-flow: row wrap;
+
+      .Pagination__number {
+        border: 2px solid #000;
+        width: 50px;
+        height: 50px;
+        margin: 0 .8rem .8rem 0;
+        display: inline-flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        &.Number__active {
+          background: rgb(254,141,148);
+          background: radial-gradient(circle, rgba(254,141,148,1) 15%, rgba(135,206,250,1) 85%); 
+        }
+      }
+      .Pagination__number:hover {
+        background: rgb(254,141,148);
+        background: radial-gradient(circle, rgba(254,141,148,1) 15%, rgba(135,206,250,1) 85%); 
+      }
     }
   }
   .App__logo {
